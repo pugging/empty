@@ -1,0 +1,335 @@
+/**
+ * Additional Custom Styles for Portfolio Pro
+ *
+ * @package Portfolio_Pro
+ * @since 1.0.0
+ */
+
+/* ========================================
+   Portfolio Single Page Styles
+   ======================================== */
+.portfolio-single {
+  padding: var(--spacing-xl) 0;
+}
+
+.portfolio-single .entry-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.portfolio-single .entry-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: var(--spacing-sm);
+}
+
+.portfolio-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-featured-image {
+  margin-bottom: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.portfolio-featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.portfolio-main-content {
+  background: var(--bg-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-sidebar .portfolio-info-box {
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 100px;
+}
+
+.portfolio-info-box h3 {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.detail-item {
+  margin-bottom: var(--spacing-md);
+}
+
+.detail-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.detail-item span {
+  color: var(--text-secondary);
+}
+
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-tag {
+  background: var(--bg-tertiary);
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.875rem;
+  color: var(--primary-light);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Portfolio Navigation */
+.portfolio-navigation {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-navigation a {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-sm);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+}
+
+.portfolio-navigation a:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.nav-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.nav-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.nav-next a {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.nav-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ========================================
+   Blog Post Styles
+   ======================================== */
+.posts-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.blog-post {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+}
+
+.blog-post:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: var(--shadow-lg);
+}
+
+.post-thumbnail {
+  overflow: hidden;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.blog-post:hover .post-thumbnail img {
+  transform: scale(1.05);
+}
+
+.blog-post .entry-header,
+.blog-post .entry-content,
+.blog-post .entry-footer {
+  padding: var(--spacing-md);
+}
+
+.blog-post .entry-header {
+  padding-bottom: 0;
+}
+
+.entry-title a {
+  color: var(--text-primary);
+  transition: color var(--transition-base);
+}
+
+.entry-title a:hover {
+  color: var(--primary-light);
+}
+
+.entry-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-light);
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+
+.read-more:hover {
+  color: var(--primary-color);
+  gap: 0.75rem;
+}
+
+/* ========================================
+   Page Header
+   ======================================== */
+.page-header {
+  text-align: center;
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-sm);
+}
+
+.archive-description {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   Pagination & Navigation
+   ======================================== */
+.posts-navigation,
+.post-navigation,
+.pagination {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.nav-links a {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+}
+
+.nav-links a:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.pagination .nav-links {
+  justify-content: center;
+}
+
+.page-numbers {
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+  margin: 0 0.25rem;
+}
+
+.page-numbers:hover,
+.page-numbers.current {
+  border-color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+@media (max-width: 768px) {
+  .portfolio-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-sidebar .portfolio-info-box {
+    position: static;
+  }
+
+  .portfolio-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-next a {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+@media print {
+  .site-header,
+  .site-footer,
+  .portfolio-navigation,
+  .posts-navigation {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}

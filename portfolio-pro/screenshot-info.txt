@@ -1,0 +1,36 @@
+SCREENSHOT INSTRUCTIONS FOR PORTFOLIO PRO THEME
+==============================================
+
+To complete the theme setup, you need to add a screenshot.png file to the theme's root directory.
+
+Requirements:
+- Filename: screenshot.png
+- Dimensions: 1200 x 900 pixels (4:3 ratio)
+- Format: PNG
+- Size: Under 1MB recommended
+
+What to Include:
+The screenshot should show the theme's homepage/front-page featuring:
+1. The hero section with gradient text and CTA buttons
+2. Portfolio grid with 3-4 portfolio items
+3. Dark theme with purple/pink gradient accents
+4. Modern, professional design aesthetic
+
+How to Create:
+1. Install and activate the theme
+2. Add some portfolio items with images
+3. Visit the front page
+4. Take a screenshot at 1200x900 resolution
+5. Save as screenshot.png in the theme root directory
+
+Alternatively:
+- Use a design tool (Figma, Photoshop, etc.) to create a mockup
+- Use a screenshot tool that allows custom dimensions
+- Use browser dev tools to set viewport to 1200x900
+
+This screenshot will appear in:
+- Appearance > Themes in WordPress admin
+- WordPress.org theme directory (if submitted)
+- Theme selection screens
+
+The screenshot is optional but highly recommended for a complete professional theme.
